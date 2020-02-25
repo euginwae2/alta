@@ -16,8 +16,6 @@ export default {
   name: 'Account',
   methods: {
     saveOrg(name) {
-      console.log(store);
-      console.log(store.getters.organization)
       store.dispatch('set_org',{name},{root:true})
     }
   }
